@@ -1,0 +1,52 @@
+{
+  "package": "com.chery.vehicontrol",
+  "name": "车控",
+  "versionName": "2.5.3",
+  "versionCode": 19,
+  "minPlatformVersion": 1200,
+  "icon": "/common/logo.png",
+  "simulationVersion": "default",
+  "deviceTypeList": [
+    "watch"
+  ],
+  "features": [
+    {
+      "name": "system.interconnect"
+    },
+    {
+      "name": "system.router"
+    },
+    {
+      "name": "system.storage"
+    },
+    {
+      "name": "system.configuration"
+    },
+    {
+      "name": "system.sensor"
+    },
+    {
+      "name": "system.prompt"
+    }
+  ],
+  "config": {
+    "logLevel": "log",
+    "designWidth": 216
+  },
+  "router": {
+    "entry": "pages/index",
+    "pages": {
+      "pages/index": {
+        "component": "index"
+      },
+      "pages/settings": {
+        "component": "settings"
+      }
+    }
+  },
+  "display": {
+    "backgroundColor": "#000000",
+    "fullScreen": true,
+    "titleBar": false
+  }
+}

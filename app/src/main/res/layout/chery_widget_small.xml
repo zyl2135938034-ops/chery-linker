@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/widget_background"
+    android:orientation="vertical"
+    android:padding="14dp">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_car_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="奇瑞汽车"
+            android:textColor="@color/widget_text"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+        <TextView android:id="@+id/tv_lock" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" android:textColor="@color/status_green" android:textSize="10sp" />
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:gravity="center_vertical" android:orientation="horizontal">
+        <TextView android:id="@+id/tv_range" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" android:textColor="@color/status_green" android:textSize="38sp" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="4dp" android:text="km" android:textColor="@color/widget_secondary" android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal">
+        <TextView android:id="@+id/tv_fuel" android:layout_width="48dp" android:layout_height="wrap_content" android:text="油 --" android:textColor="@color/widget_text" android:textSize="10sp" />
+        <ProgressBar
+            android:id="@+id/pb_fuel"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="6dp"
+            android:layout_weight="1"
+            android:max="100"
+            android:progressDrawable="@drawable/pb_rounded" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:gravity="center_vertical" android:orientation="horizontal">
+        <TextView android:id="@+id/tv_battery" android:layout_width="48dp" android:layout_height="wrap_content" android:text="电 --" android:textColor="@color/widget_text" android:textSize="10sp" />
+        <ProgressBar
+            android:id="@+id/pb_battery"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="6dp"
+            android:layout_weight="1"
+            android:max="100"
+            android:progressDrawable="@drawable/pb_rounded" />
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:gravity="center_vertical" android:orientation="horizontal">
+        <TextView android:id="@+id/tv_update" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="等待更新" android:textColor="@color/widget_secondary" android:textSize="10sp" />
+        <TextView android:id="@+id/tv_refresh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="4dp" android:text="刷新" android:textColor="@color/status_blue" android:textSize="11sp" android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

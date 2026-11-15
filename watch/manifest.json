@@ -1,0 +1,64 @@
+{
+  "package": "com.chery.vehicontrol",
+  "name": "车控",
+  "versionName": "2.5.3",
+  "versionCode": 19,
+  "minPlatformVersion": 1200,
+  "icon": "/common/logo.png",
+  "simulationVersion": "default",
+  "deviceTypeList": [
+    "watch"
+  ],
+  "features": [
+    {
+      "name": "system.interconnect"
+    },
+    {
+      "name": "system.router"
+    },
+    {
+      "name": "system.storage"
+    },
+    {
+      "name": "system.configuration"
+    },
+    {
+      "name": "system.sensor"
+    },
+    {
+      "name": "system.vibrator"
+    },
+    {
+      "name": "system.prompt"
+    }
+  ],
+  "config": {
+    "logLevel": "log",
+    "designWidth": 216
+  },
+  "router": {
+    "entry": "pages/index",
+    "pages": {
+      "pages/index": {
+        "component": "index"
+      },
+      "pages/settings": {
+        "component": "settings"
+      }
+    }
+  },
+  "display": {
+    "backgroundColor": "#000000",
+    "fullScreen": true,
+    "titleBar": false
+  },
+  "minAPILevel": 1,
+  "packageInfo": {
+    "toolkit": "2.0.5",
+    "timeStamp": "2026-11-15T00:00:00.000Z",
+    "node": "v24.21.0",
+    "platform": "win32",
+    "arch": "x64",
+    "component": true
+  }
+}
